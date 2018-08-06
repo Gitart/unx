@@ -1,6 +1,8 @@
 WHAT IS CURL?
 Curl is a command line tool and library. It is open source and run on various OS. Basically it is used to transferring data from a server to another server. It supports many types of Protocol like FTP, SFTP, POP3 SMB, SMTP, SMTPS, DICT, FILE, FTPS, Gopher, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3S, RTMP, RTSP, SCP. Curl also support SSL certificate. In today world, most of the equipment uses curl. Latest version of curl is 7.44.0 that released on 12th August 2015.
 
+
+
 DOWNLOAD
 You can download curl as per your Operating system compatible. It can be x86 or x64 as per your requirement. You can download it from here.
 
