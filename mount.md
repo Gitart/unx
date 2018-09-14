@@ -1,0 +1,35 @@
+## Монтирование дисков с удаленного сревера
+
+**Задача :**
+Работать с удаленным сервером на локальном компьютере
+
+1. Используем комманду **sshfs**
+
+### Пример
+```sh
+sudo sshfs ubuntu@111.222.125.100:/home/ubuntu/ /home/air/rmt -o IdentityFile=/home/air/key/block.pem -o allow_other -o auto_unmount
+```
+
+## Где :
+
+|Аргумент|Описание|
+|--|--|
+|**ubuntu**|Пользователь под которым полдключение |
+|**111.222.125.100** |Адрес удаленного сервера|
+|**/home/ubuntu/** |Родительский каталог |
+|**/home/air/rmt** |Адрес локального каталога (он должен быть создан зараннее|
+|**-o IdentityFile** |Путь к ключу|
+|**-o allow_other** |Разрешения на подключение|
+|**-o auto_unmount** |Автоматическое отключение при выходе|
+
+
+## Пример 2
+```sh
+#sudo sshfs ubuntu@111.223.111.231:/home/ubuntu/mon/  /home/air/rmt -o IdentityFile=/home/air/block.pem  #-o auto_unmount  #  -o debug
+```
+
+#Отключение диска
+
+```sh
+#sudo fusermount -u /home/air/rmt 
+```
