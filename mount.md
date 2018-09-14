@@ -28,7 +28,7 @@ sudo sshfs ubuntu@111.222.125.100:/home/ubuntu/ /home/air/rmt -o IdentityFile=/h
 #sudo sshfs ubuntu@111.223.111.231:/home/ubuntu/mon/  /home/air/rmt -o IdentityFile=/home/air/block.pem  #-o auto_unmount  #  -o debug
 ```
 
-#Отключение диска
+## Отключение диска
 
 ```sh
 #sudo fusermount -u /home/air/rmt 
