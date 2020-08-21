@@ -1,3 +1,10 @@
+
+## Подключение к удаленному серверу по 10014 порту
+```
+ssh zero@95.56.47.74 -p 10014
+```
+
+
 Regular Linux environment after that, you still can forward ports after that such as:
 
 ```
