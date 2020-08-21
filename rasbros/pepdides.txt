@@ -1,0 +1,23 @@
+RKEKNVQ
+IPKKLLQK
+QYFHQLEKMNVK
+IPKKLLQK
+GDLSTALEVAIDCYEK
+QYFHQLEKMNVKIPENIYR
+RKEKNVQ
+VLAKHGKLQDAIN
+ILGFMK
+LEDVALQILL
+Yes, it's just not as efficient as Bruno's, because it launches another program, unnecessarily.
+If efficiency matters, do it Bruno's way. I remember my way because you can use it with other
+commands, where the "redirect in from" syntax doesn't work. – Warren Young Oct 5 '09 at 18:12
+There's another, more serious problem with this: because the while loop is part of a pipeline,
+it runs in a subshell, and hence any variables set inside the loop are lost when it exits
+(see bash-hackers.org/wiki/doku.php/mirroring/bashfaq/024).
+This can be very annoying (depending on what you're trying to do in the loop)
+Gordon Davisson Oct 6 '09 at 0:57
+I use "cat file | " as the start of a lot of my commands purely
+because I often prototype with "head file |" – mat kelcey Feb 26 '14 at 21:33
+This may be not that efficient, but it's much more readable than other answers.
+Savage Reader Dec 22 '14 at 13:02
+show 13 more comments
